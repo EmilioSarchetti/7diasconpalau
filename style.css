@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5fafd;
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #005f73;
+}
+
+header img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Secciones */
+section {
+  background: #ffffff;
+  border-left: 5px solid #d4af37;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Botones */
+button {
+  background-color: #0ea5e9;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0284c7;
+}
+
+/* Textareas */
+textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botones desplegables */
+.toggle-btn {
+  background-color: #d4af37;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Contenedor desplegable */
+.content-box {
+  display: none;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Imágenes */
+.content-box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
